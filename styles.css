@@ -983,33 +983,38 @@ section {
 }
 
 .contact-form-card {
-  background: var(--white);
+  background: var(--montana-deep);
   border-radius: 1.25rem;
   box-shadow: var(--shadow);
-  border: 1px solid rgba(48, 90, 130, 0.12);
+  border: 1px solid rgba(196, 163, 106, 0.28);
   overflow: hidden;
 }
 
 .contact-form-head {
-  padding: 1.75rem 1.75rem 0.5rem;
-  border-bottom: 1px solid var(--line);
-  background: linear-gradient(180deg, rgba(243, 238, 228, 0.55) 0%, var(--white) 100%);
+  padding: 1.75rem 1.75rem 1rem;
+  border-bottom: 1px solid rgba(196, 163, 106, 0.22);
+  background: linear-gradient(180deg, rgba(48, 90, 130, 0.35) 0%, var(--montana-deep) 100%);
+}
+
+.contact-form-head .eyebrow {
+  color: var(--gold);
 }
 
 .contact-form-head h2 {
   margin: 0 0 0.45rem;
   font-size: clamp(1.65rem, 3vw, 2.15rem);
-  color: var(--montana);
+  color: var(--cream);
+}
+
+.contact-form-head .fine {
+  color: rgba(243, 238, 228, 0.72);
 }
 
 /* HighLevel embed uses cream/gold labels — needs a dark surround (not white). */
 .contact-form-embed {
   min-height: 820px;
-  padding: 1.25rem clamp(1rem, 2.5vw, 1.75rem) 2rem;
-  background:
-    radial-gradient(900px 320px at 20% 0%, rgba(110, 168, 204, 0.12), transparent 55%),
-    var(--montana-deep);
-  border-top: 1px solid rgba(196, 163, 106, 0.22);
+  padding: 0 clamp(0.75rem, 2vw, 1.25rem) 1.5rem;
+  background: var(--montana-deep);
 }
 
 .contact-form-embed iframe {
