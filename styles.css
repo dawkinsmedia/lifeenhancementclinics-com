@@ -89,7 +89,8 @@ h3,
   transition: background 0.25s ease, box-shadow 0.25s ease, color 0.25s ease;
 }
 
-.site-header.is-scrolled {
+.site-header.is-scrolled,
+.site-header.site-header--solid {
   background: rgba(15, 33, 55, 0.94);
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.22);
   backdrop-filter: blur(12px);
@@ -1324,6 +1325,56 @@ footer.site-footer {
   font-size: 0.78rem;
   color: rgba(243, 238, 228, 0.55);
   max-width: 52rem;
+}
+
+.footer-policies {
+  margin-top: 0.85rem;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.footer-policies a {
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+}
+
+.legal-doc {
+  padding: 7.2rem 0 4.5rem;
+}
+
+.policy {
+  width: min(42rem, 100%);
+}
+
+.policy h1 {
+  margin: 0 0 0.55rem;
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  color: var(--montana-deep);
+}
+
+.policy .fine {
+  margin-bottom: 0.5rem;
+}
+
+.policy h2 {
+  margin: 2rem 0 0.5rem;
+  font-size: 1.35rem;
+  color: var(--montana);
+}
+
+.policy p,
+.policy li {
+  color: var(--ink);
+}
+
+.policy ul {
+  margin: 0.35rem 0 0.8rem;
+  padding-left: 1.2rem;
+}
+
+.policy a {
+  color: var(--montana);
+  text-underline-offset: 0.14em;
 }
 
 @media (max-width: 960px) {
